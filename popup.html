@@ -26,18 +26,36 @@
     <form id="mappingForm" class="form">
       <label>
         <span id="letterLabel">Harf</span>
-        <input id="letterInput" maxlength="1" required placeholder="Kisayol olacak harfi girin (orn: i)" />
+        <input
+          id="letterInput"
+          type="text"
+          inputmode="text"
+          maxlength="1"
+          required
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Kisayol olacak harfi girin (orn: i)"
+        />
       </label>
 
-      <label>
+      <label class="language-field">
         <span id="languageLabel">Dil</span>
-        <input id="languageInput" list="languageList" required placeholder="Kisayola baglanacak dili secin (orn: İngilizce)" />
-        <datalist id="languageList"></datalist>
+        <div class="language-input-wrap">
+          <input
+            id="languageInput"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            required
+            placeholder="Kisayola baglanacak dili secin (orn: İngilizce)"
+          />
+          <div id="languageSuggestions" class="language-suggestions" hidden></div>
+        </div>
       </label>
 
       <label>
         <span id="delayLabel">Gecikme (ms)</span>
-        <input id="delayInput" type="number" min="0" step="100" value="500" required />
+        <input id="delayInput" type="number" min="0" step="1" value="500" required />
         <small id="delayHelp" class="fieldHelp">Harf yazildiktan sonra dilin otomatik secilmesi icin beklenecek sure.</small>
       </label>
 

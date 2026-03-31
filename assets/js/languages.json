@@ -1,251 +1,998 @@
 [
-  "Abhazca",
-  "Açece",
-  "Açoli dili",
-  "Afar dili",
-  "Afrikaanca",
-  "Almanca",
-  "Alur dili",
-  "Arapça",
-  "Arnavutça",
-  "Assamca",
-  "Avarca",
-  "Awadhi dili",
-  "Aymaraca",
-  "Azerbaycan dili",
-  "Bali dili",
-  "Bambara dili",
-  "Baoulé dili",
-  "Baskça",
-  "Başkurtça",
-  "Batak Karo dili",
-  "Batak Simalungun dili",
-  "Batak Toba dili",
-  "Batavi dili",
-  "Belarusça",
-  "Beluçça",
-  "Bemba dili",
-  "Bengalce",
-  "Berber dili",
-  "Berberi dili (Tifinag)",
-  "Bhojpuri dili",
-  "Bikol dili",
-  "Boşnakça",
-  "Bretonca",
-  "Bulgarca",
-  "Burmaca",
-  "Buryat dili",
-  "Cava dili",
-  "Chamorro dili",
-  "Chuukece",
-  "Çeçence",
-  "Çekçe",
-  "Çevaca",
-  "Çince (Basitleştirilmiş)",
-  "Çince (Geleneksel)",
-  "Çuvaşça",
-  "Danca",
-  "Darice",
-  "Dhivehi dili",
-  "Dinka dili",
-  "Dogri dili",
-  "Dombe dili",
-  "Dyula dili",
-  "Dzongka dili",
-  "Endonezce",
-  "Ermenice",
-  "Esperanto",
-  "Estonyaca",
-  "Ewe dili",
-  "Faroece",
-  "Farsça",
-  "Felemenkçe",
-  "Fijice",
-  "Filipince",
-  "Fince",
-  "Fon dili",
-  "Fransızca",
-  "Fransızca (Kanada)",
-  "Frizce",
-  "Fulani dili",
-  "Furlan dili",
-  "Gaa dili",
-  "Galce",
-  "Galiçyaca",
-  "Guarani",
-  "Güceratça",
-  "Gürcüce",
-  "Habeşçe",
-  "Haiti Kreyolu",
-  "Hakha Chin dili",
-  "Hausa dili",
-  "Hawai dili",
-  "Hırvatça",
-  "Hiligaynon dili",
-  "Hintçe",
-  "Hmong dili",
-  "Hosa",
-  "Hunsrik dili",
-  "Ilocano dili",
-  "İbanca",
-  "İbo dili",
-  "İbranice",
-  "İngilizce",
-  "İnuitçe (Hece)",
-  "İnuitçe (Latin)",
-  "İrlandaca",
-  "İskoç Gaelcesi",
-  "İspanyolca",
-  "İsveççe",
-  "İtalyanca",
-  "İzlandaca",
-  "Jamaika lehçesi",
-  "Japonca",
-  "Jingpo dili",
-  "Kalaallisut dili",
-  "Kamboçyaca",
-  "Kannada dili",
-  "Kantonca",
-  "Kanuri dili",
-  "Kapampangan dili",
-  "Katalanca",
-  "Kazakça",
-  "Kekçice",
-  "Khasi dili",
-  "Kırgızca",
-  "Kırım Tatarcası (Kiril)",
-  "Kırım Tatarcası (Latin)",
-  "Kiga dili",
-  "Kituba dili",
-  "Kokborok dili",
-  "Komi dili",
-  "Kongoca",
-  "Konkani dili",
-  "Korece",
-  "Korsikaca",
-  "Krio dili",
-  "Kürtçe (Kurmançça)",
-  "Kürtçe (Sorani)",
-  "Laoca",
-  "Latgalya dili",
-  "Latince",
-  "Lehçe",
-  "Letonca",
-  "Liguryaca",
-  "Limburgca",
-  "Lingala",
-  "Litvanca",
-  "Lombard dili",
-  "Luganda dili",
-  "Luo dili",
-  "Lüksemburgca",
-  "Macarca",
-  "Madurese dili",
-  "Maithili dili",
-  "Makassar dili",
-  "Makedonca",
-  "Malayalam dili",
-  "Malayca",
-  "Malayca (Javi)",
-  "Malgaşça",
-  "Maltaca",
-  "Mam dili",
-  "Manksça",
-  "Maori dili",
-  "Marathi",
-  "Marshall Adaları dili",
-  "Marwadi dili",
-  "Meiteilon dili (Manipuri)",
-  "Minang dili",
-  "Mizo dili",
-  "Moğolca",
-  "Morisyen Kreolü",
-  "Nahuatl dili (Doğu Huasteca)",
-  "Ndau dili",
-  "Ndebele dili (Güney)",
-  "Nepal Bhasa dili (Newari)",
-  "Nepalce",
-  "NKo dili",
-  "Norveççe",
-  "Nuer dili",
-  "Odiya (Oriya) dili",
-  "Oksitanca",
-  "Oromo dili",
-  "Osetçe",
-  "Ova Marice",
-  "Özbekçe",
-  "Pangasinan dili",
-  "Papiamento dili",
-  "Pencapça (Gurmukhi)",
-  "Pencapça (Shahmukhi)",
-  "Peştuca",
-  "Portekizce (Brezilya)",
-  "Portekizce (Portekiz)",
-  "Quechua dili",
-  "Romanca",
-  "Romence",
-  "Ruandaca",
-  "Rundice",
-  "Rusça",
-  "Sabuanca",
-  "Sami dili (Kuzey)",
-  "Samoaca",
-  "Sango dili",
-  "Sanskritçe",
-  "Santali (Latince)",
-  "Santali (Ol Chiki)",
-  "Sepedi dili",
-  "Sesotho dili",
-  "Seylanca",
-  "Seyşeller Kreolü",
-  "Shan dili",
-  "Shona",
-  "Sırpça",
-  "Sicilyaca",
-  "Silezya dili",
-  "Sint",
-  "Slovakça",
-  "Slovence",
-  "Somalice",
-  "Sunda dili",
-  "Susu dili",
-  "Svahili dili",
-  "Swazi dili",
-  "Tacikce",
-  "Tahitice",
-  "Tamil",
-  "Tatarca",
-  "Tayca",
-  "Telugu dili",
-  "Tetum dili",
-  "Tibetçe",
-  "Tigrinya dili",
-  "Tiv dili",
-  "Tok Pisin dili",
-  "Tongaca",
-  "Tshiluba dili",
-  "Tsongaca",
-  "Tsvana dili",
-  "Tuluca",
-  "Tumbuka dili",
-  "Tuvaca",
-  "Türkçe",
-  "Türkmence",
-  "Twi dili",
-  "Udmurt dili",
-  "Ukraynaca",
-  "Urduca",
-  "Uygurca",
-  "Varayca",
-  "Venda dili",
-  "Venedikçe",
-  "Vietnamca",
-  "Wolof dili",
-  "Yakutça",
-  "Yidce",
-  "Yoruba dili",
-  "Yucatec Maya dili",
-  "Yunanca",
-  "Zapotek dili",
-  "Zulu"
+  {
+    "tr": "Abhazca",
+    "en": "Abkhaz"
+  },
+  {
+    "tr": "Açece",
+    "en": "Acehnese"
+  },
+  {
+    "tr": "Açoli dili",
+    "en": "Acholi"
+  },
+  {
+    "tr": "Afar dili",
+    "en": "Afar"
+  },
+  {
+    "tr": "Afrikaanca",
+    "en": "Afrikaans"
+  },
+  {
+    "tr": "Almanca",
+    "en": "German"
+  },
+  {
+    "tr": "Alur dili",
+    "en": "Alur"
+  },
+  {
+    "tr": "Arapça",
+    "en": "Arabic"
+  },
+  {
+    "tr": "Arnavutça",
+    "en": "Albanian"
+  },
+  {
+    "tr": "Assamca",
+    "en": "Assamese"
+  },
+  {
+    "tr": "Avarca",
+    "en": "Avar"
+  },
+  {
+    "tr": "Awadhi dili",
+    "en": "Awadhi"
+  },
+  {
+    "tr": "Aymaraca",
+    "en": "Aymara"
+  },
+  {
+    "tr": "Azerbaycan dili",
+    "en": "Azerbaijani"
+  },
+  {
+    "tr": "Bali dili",
+    "en": "Balinese"
+  },
+  {
+    "tr": "Bambara dili",
+    "en": "Bambara"
+  },
+  {
+    "tr": "Baoulé dili",
+    "en": "Baoulé"
+  },
+  {
+    "tr": "Baskça",
+    "en": "Basque"
+  },
+  {
+    "tr": "Başkurtça",
+    "en": "Bashkir"
+  },
+  {
+    "tr": "Batak Karo dili",
+    "en": "Batak Karo"
+  },
+  {
+    "tr": "Batak Simalungun dili",
+    "en": "Batak Simalungun"
+  },
+  {
+    "tr": "Batak Toba dili",
+    "en": "Batak Toba"
+  },
+  {
+    "tr": "Batavi dili",
+    "en": "Betawi"
+  },
+  {
+    "tr": "Belarusça",
+    "en": "Belarusian"
+  },
+  {
+    "tr": "Beluçça",
+    "en": "Baluchi"
+  },
+  {
+    "tr": "Bemba dili",
+    "en": "Bemba"
+  },
+  {
+    "tr": "Bengalce",
+    "en": "Bengali"
+  },
+  {
+    "tr": "Berber dili",
+    "en": "Tamazight"
+  },
+  {
+    "tr": "Berberi dili (Tifinag)",
+    "en": "Tamazight (Tifinagh)"
+  },
+  {
+    "tr": "Bhojpuri dili",
+    "en": "Bhojpuri"
+  },
+  {
+    "tr": "Bikol dili",
+    "en": "Bikol"
+  },
+  {
+    "tr": "Boşnakça",
+    "en": "Bosnian"
+  },
+  {
+    "tr": "Bretonca",
+    "en": "Breton"
+  },
+  {
+    "tr": "Bulgarca",
+    "en": "Bulgarian"
+  },
+  {
+    "tr": "Burmaca",
+    "en": "Myanmar (Burmese)"
+  },
+  {
+    "tr": "Buryat dili",
+    "en": "Buryat"
+  },
+  {
+    "tr": "Cava dili",
+    "en": "Javanese"
+  },
+  {
+    "tr": "Chamorro dili",
+    "en": "Chamorro"
+  },
+  {
+    "tr": "Chuukece",
+    "en": "Chuukese"
+  },
+  {
+    "tr": "Çeçence",
+    "en": "Chechen"
+  },
+  {
+    "tr": "Çekçe",
+    "en": "Czech"
+  },
+  {
+    "tr": "Çevaca",
+    "en": "Chichewa"
+  },
+  {
+    "tr": "Çince (Basitleştirilmiş)",
+    "en": "Chinese (Simplified)"
+  },
+  {
+    "tr": "Çince (Geleneksel)",
+    "en": "Chinese (Traditional)"
+  },
+  {
+    "tr": "Çuvaşça",
+    "en": "Chuvash"
+  },
+  {
+    "tr": "Danca",
+    "en": "Danish"
+  },
+  {
+    "tr": "Darice",
+    "en": "Dari"
+  },
+  {
+    "tr": "Dhivehi dili",
+    "en": "Dhivehi"
+  },
+  {
+    "tr": "Dinka dili",
+    "en": "Dinka"
+  },
+  {
+    "tr": "Dogri dili",
+    "en": "Dogri"
+  },
+  {
+    "tr": "Dombe dili",
+    "en": "Dombe"
+  },
+  {
+    "tr": "Dyula dili",
+    "en": "Dyula"
+  },
+  {
+    "tr": "Dzongka dili",
+    "en": "Dzongkha"
+  },
+  {
+    "tr": "Endonezce",
+    "en": "Indonesian"
+  },
+  {
+    "tr": "Ermenice",
+    "en": "Armenian"
+  },
+  {
+    "tr": "Esperanto",
+    "en": "Esperanto"
+  },
+  {
+    "tr": "Estonyaca",
+    "en": "Estonian"
+  },
+  {
+    "tr": "Ewe dili",
+    "en": "Ewe"
+  },
+  {
+    "tr": "Faroece",
+    "en": "Faroese"
+  },
+  {
+    "tr": "Farsça",
+    "en": "Persian"
+  },
+  {
+    "tr": "Felemenkçe",
+    "en": "Dutch"
+  },
+  {
+    "tr": "Fijice",
+    "en": "Fijian"
+  },
+  {
+    "tr": "Filipince",
+    "en": "Filipino"
+  },
+  {
+    "tr": "Fince",
+    "en": "Finnish"
+  },
+  {
+    "tr": "Fon dili",
+    "en": "Fon"
+  },
+  {
+    "tr": "Fransızca",
+    "en": "French"
+  },
+  {
+    "tr": "Fransızca (Kanada)",
+    "en": "French (Canada)"
+  },
+  {
+    "tr": "Frizce",
+    "en": "Frisian"
+  },
+  {
+    "tr": "Fulani dili",
+    "en": "Fulani"
+  },
+  {
+    "tr": "Furlan dili",
+    "en": "Friulian"
+  },
+  {
+    "tr": "Gaa dili",
+    "en": "Ga"
+  },
+  {
+    "tr": "Galce",
+    "en": "Welsh"
+  },
+  {
+    "tr": "Galiçyaca",
+    "en": "Galician"
+  },
+  {
+    "tr": "Guarani",
+    "en": "Guarani"
+  },
+  {
+    "tr": "Güceratça",
+    "en": "Gujarati"
+  },
+  {
+    "tr": "Gürcüce",
+    "en": "Georgian"
+  },
+  {
+    "tr": "Habeşçe",
+    "en": "Amharic"
+  },
+  {
+    "tr": "Haiti Kreyolu",
+    "en": "Haitian Creole"
+  },
+  {
+    "tr": "Hakha Chin dili",
+    "en": "Hakha Chin"
+  },
+  {
+    "tr": "Hausa dili",
+    "en": "Hausa"
+  },
+  {
+    "tr": "Hawai dili",
+    "en": "Hawaiian"
+  },
+  {
+    "tr": "Hırvatça",
+    "en": "Croatian"
+  },
+  {
+    "tr": "Hiligaynon dili",
+    "en": "Hiligaynon"
+  },
+  {
+    "tr": "Hintçe",
+    "en": "Hindi"
+  },
+  {
+    "tr": "Hmong dili",
+    "en": "Hmong"
+  },
+  {
+    "tr": "Hosa",
+    "en": "Xhosa"
+  },
+  {
+    "tr": "Hunsrik dili",
+    "en": "Hunsrik"
+  },
+  {
+    "tr": "Ilocano dili",
+    "en": "Ilocano"
+  },
+  {
+    "tr": "İbanca",
+    "en": "Iban"
+  },
+  {
+    "tr": "İbo dili",
+    "en": "Igbo"
+  },
+  {
+    "tr": "İbranice",
+    "en": "Hebrew"
+  },
+  {
+    "tr": "İngilizce",
+    "en": "English"
+  },
+  {
+    "tr": "İnuitçe (Hece)",
+    "en": "Inuktut (Syllabics)"
+  },
+  {
+    "tr": "İnuitçe (Latin)",
+    "en": "Inuktut (Latin)"
+  },
+  {
+    "tr": "İrlandaca",
+    "en": "Irish"
+  },
+  {
+    "tr": "İskoç Gaelcesi",
+    "en": "Scots Gaelic"
+  },
+  {
+    "tr": "İspanyolca",
+    "en": "Spanish"
+  },
+  {
+    "tr": "İsveççe",
+    "en": "Swedish"
+  },
+  {
+    "tr": "İtalyanca",
+    "en": "Italian"
+  },
+  {
+    "tr": "İzlandaca",
+    "en": "Icelandic"
+  },
+  {
+    "tr": "Jamaika lehçesi",
+    "en": "Jamaican Patois"
+  },
+  {
+    "tr": "Japonca",
+    "en": "Japanese"
+  },
+  {
+    "tr": "Jingpo dili",
+    "en": "Jingpo"
+  },
+  {
+    "tr": "Kalaallisut dili",
+    "en": "Kalaallisut"
+  },
+  {
+    "tr": "Kamboçyaca",
+    "en": "Khmer"
+  },
+  {
+    "tr": "Kannada dili",
+    "en": "Kannada"
+  },
+  {
+    "tr": "Kantonca",
+    "en": "Cantonese"
+  },
+  {
+    "tr": "Kanuri dili",
+    "en": "Kanuri"
+  },
+  {
+    "tr": "Kapampangan dili",
+    "en": "Kapampangan"
+  },
+  {
+    "tr": "Katalanca",
+    "en": "Catalan"
+  },
+  {
+    "tr": "Kazakça",
+    "en": "Kazakh"
+  },
+  {
+    "tr": "Kekçice",
+    "en": "Qʼeqchiʼ"
+  },
+  {
+    "tr": "Khasi dili",
+    "en": "Khasi"
+  },
+  {
+    "tr": "Kırgızca",
+    "en": "Kyrgyz"
+  },
+  {
+    "tr": "Kırım Tatarcası (Kiril)",
+    "en": "Crimean Tatar (Cyrillic)"
+  },
+  {
+    "tr": "Kırım Tatarcası (Latin)",
+    "en": "Crimean Tatar (Latin)"
+  },
+  {
+    "tr": "Kiga dili",
+    "en": "Kiga"
+  },
+  {
+    "tr": "Kituba dili",
+    "en": "Kituba"
+  },
+  {
+    "tr": "Kokborok dili",
+    "en": "Kokborok"
+  },
+  {
+    "tr": "Komi dili",
+    "en": "Komi"
+  },
+  {
+    "tr": "Kongoca",
+    "en": "Kongo"
+  },
+  {
+    "tr": "Konkani dili",
+    "en": "Konkani"
+  },
+  {
+    "tr": "Korece",
+    "en": "Korean"
+  },
+  {
+    "tr": "Korsikaca",
+    "en": "Corsican"
+  },
+  {
+    "tr": "Krio dili",
+    "en": "Krio"
+  },
+  {
+    "tr": "Kürtçe (Kurmançça)",
+    "en": "Kurdish (Kurmanji)"
+  },
+  {
+    "tr": "Kürtçe (Sorani)",
+    "en": "Kurdish (Sorani)"
+  },
+  {
+    "tr": "Laoca",
+    "en": "Lao"
+  },
+  {
+    "tr": "Latgalya dili",
+    "en": "Latgalian"
+  },
+  {
+    "tr": "Latince",
+    "en": "Latin"
+  },
+  {
+    "tr": "Lehçe",
+    "en": "Polish"
+  },
+  {
+    "tr": "Letonca",
+    "en": "Latvian"
+  },
+  {
+    "tr": "Liguryaca",
+    "en": "Ligurian"
+  },
+  {
+    "tr": "Limburgca",
+    "en": "Limburgish"
+  },
+  {
+    "tr": "Lingala",
+    "en": "Lingala"
+  },
+  {
+    "tr": "Litvanca",
+    "en": "Lithuanian"
+  },
+  {
+    "tr": "Lombard dili",
+    "en": "Lombard"
+  },
+  {
+    "tr": "Luganda dili",
+    "en": "Luganda"
+  },
+  {
+    "tr": "Luo dili",
+    "en": "Luo"
+  },
+  {
+    "tr": "Lüksemburgca",
+    "en": "Luxembourgish"
+  },
+  {
+    "tr": "Macarca",
+    "en": "Hungarian"
+  },
+  {
+    "tr": "Madurese dili",
+    "en": "Madurese"
+  },
+  {
+    "tr": "Maithili dili",
+    "en": "Maithili"
+  },
+  {
+    "tr": "Makassar dili",
+    "en": "Makassar"
+  },
+  {
+    "tr": "Makedonca",
+    "en": "Macedonian"
+  },
+  {
+    "tr": "Malayalam dili",
+    "en": "Malayalam"
+  },
+  {
+    "tr": "Malayca",
+    "en": "Malay"
+  },
+  {
+    "tr": "Malayca (Javi)",
+    "en": "Malay (Jawi)"
+  },
+  {
+    "tr": "Malgaşça",
+    "en": "Malagasy"
+  },
+  {
+    "tr": "Maltaca",
+    "en": "Maltese"
+  },
+  {
+    "tr": "Mam dili",
+    "en": "Mam"
+  },
+  {
+    "tr": "Manksça",
+    "en": "Manx"
+  },
+  {
+    "tr": "Maori dili",
+    "en": "Maori"
+  },
+  {
+    "tr": "Marathi",
+    "en": "Marathi"
+  },
+  {
+    "tr": "Marshall Adaları dili",
+    "en": "Marshallese"
+  },
+  {
+    "tr": "Marwadi dili",
+    "en": "Marwadi"
+  },
+  {
+    "tr": "Meiteilon dili (Manipuri)",
+    "en": "Meiteilon (Manipuri)"
+  },
+  {
+    "tr": "Minang dili",
+    "en": "Minang"
+  },
+  {
+    "tr": "Mizo dili",
+    "en": "Mizo"
+  },
+  {
+    "tr": "Moğolca",
+    "en": "Mongolian"
+  },
+  {
+    "tr": "Morisyen Kreolü",
+    "en": "Mauritian Creole"
+  },
+  {
+    "tr": "Nahuatl dili (Doğu Huasteca)",
+    "en": "Nahuatl (Eastern Huasteca)"
+  },
+  {
+    "tr": "Ndau dili",
+    "en": "Ndau"
+  },
+  {
+    "tr": "Ndebele dili (Güney)",
+    "en": "Ndebele (South)"
+  },
+  {
+    "tr": "Nepal Bhasa dili (Newari)",
+    "en": "Nepalbhasa (Newari)"
+  },
+  {
+    "tr": "Nepalce",
+    "en": "Nepali"
+  },
+  {
+    "tr": "NKo dili",
+    "en": "NKo"
+  },
+  {
+    "tr": "Norveççe",
+    "en": "Norwegian"
+  },
+  {
+    "tr": "Nuer dili",
+    "en": "Nuer"
+  },
+  {
+    "tr": "Odiya (Oriya) dili",
+    "en": "Odia (Oriya)"
+  },
+  {
+    "tr": "Oksitanca",
+    "en": "Occitan"
+  },
+  {
+    "tr": "Oromo dili",
+    "en": "Oromo"
+  },
+  {
+    "tr": "Osetçe",
+    "en": "Ossetian"
+  },
+  {
+    "tr": "Ova Marice",
+    "en": "Meadow Mari"
+  },
+  {
+    "tr": "Özbekçe",
+    "en": "Uzbek"
+  },
+  {
+    "tr": "Pangasinan dili",
+    "en": "Pangasinan"
+  },
+  {
+    "tr": "Papiamento dili",
+    "en": "Papiamento"
+  },
+  {
+    "tr": "Pencapça (Gurmukhi)",
+    "en": "Punjabi (Gurmukhi)"
+  },
+  {
+    "tr": "Pencapça (Shahmukhi)",
+    "en": "Punjabi (Shahmukhi)"
+  },
+  {
+    "tr": "Peştuca",
+    "en": "Pashto"
+  },
+  {
+    "tr": "Portekizce (Brezilya)",
+    "en": "Portuguese (Brazil)"
+  },
+  {
+    "tr": "Portekizce (Portekiz)",
+    "en": "Portuguese (Portugal)"
+  },
+  {
+    "tr": "Quechua dili",
+    "en": "Quechua"
+  },
+  {
+    "tr": "Romanca",
+    "en": "Romanian"
+  },
+  {
+    "tr": "Romence",
+    "en": "Romansh"
+  },
+  {
+    "tr": "Ruandaca",
+    "en": "Kinyarwanda"
+  },
+  {
+    "tr": "Rundice",
+    "en": "Rundi"
+  },
+  {
+    "tr": "Rusça",
+    "en": "Russian"
+  },
+  {
+    "tr": "Sabuanca",
+    "en": "Cebuano"
+  },
+  {
+    "tr": "Sami dili (Kuzey)",
+    "en": "Sami (North)"
+  },
+  {
+    "tr": "Samoaca",
+    "en": "Samoan"
+  },
+  {
+    "tr": "Sango dili",
+    "en": "Sango"
+  },
+  {
+    "tr": "Sanskritçe",
+    "en": "Sanskrit"
+  },
+  {
+    "tr": "Santali (Latince)",
+    "en": "Santali (Latin)"
+  },
+  {
+    "tr": "Santali (Ol Chiki)",
+    "en": "Santali (Ol Chiki)"
+  },
+  {
+    "tr": "Sepedi dili",
+    "en": "Sepedi"
+  },
+  {
+    "tr": "Sesotho dili",
+    "en": "Sesotho"
+  },
+  {
+    "tr": "Seylanca",
+    "en": "Sinhala"
+  },
+  {
+    "tr": "Seyşeller Kreolü",
+    "en": "Seychellois Creole"
+  },
+  {
+    "tr": "Shan dili",
+    "en": "Shan"
+  },
+  {
+    "tr": "Shona",
+    "en": "Shona"
+  },
+  {
+    "tr": "Sırpça",
+    "en": "Serbian"
+  },
+  {
+    "tr": "Sicilyaca",
+    "en": "Sicilian"
+  },
+  {
+    "tr": "Silezya dili",
+    "en": "Silesian"
+  },
+  {
+    "tr": "Sint",
+    "en": "Sindhi"
+  },
+  {
+    "tr": "Slovakça",
+    "en": "Slovak"
+  },
+  {
+    "tr": "Slovence",
+    "en": "Slovenian"
+  },
+  {
+    "tr": "Somalice",
+    "en": "Somali"
+  },
+  {
+    "tr": "Sunda dili",
+    "en": "Sundanese"
+  },
+  {
+    "tr": "Susu dili",
+    "en": "Susu"
+  },
+  {
+    "tr": "Svahili dili",
+    "en": "Swahili"
+  },
+  {
+    "tr": "Swazi dili",
+    "en": "Swati"
+  },
+  {
+    "tr": "Tacikce",
+    "en": "Tajik"
+  },
+  {
+    "tr": "Tahitice",
+    "en": "Tahitian"
+  },
+  {
+    "tr": "Tamil",
+    "en": "Tamil"
+  },
+  {
+    "tr": "Tatarca",
+    "en": "Tatar"
+  },
+  {
+    "tr": "Tayca",
+    "en": "Thai"
+  },
+  {
+    "tr": "Telugu dili",
+    "en": "Telugu"
+  },
+  {
+    "tr": "Tetum dili",
+    "en": "Tetum"
+  },
+  {
+    "tr": "Tibetçe",
+    "en": "Tibetan"
+  },
+  {
+    "tr": "Tigrinya dili",
+    "en": "Tigrinya"
+  },
+  {
+    "tr": "Tiv dili",
+    "en": "Tiv"
+  },
+  {
+    "tr": "Tok Pisin dili",
+    "en": "Tok Pisin"
+  },
+  {
+    "tr": "Tongaca",
+    "en": "Tongan"
+  },
+  {
+    "tr": "Tshiluba dili",
+    "en": "Tshiluba"
+  },
+  {
+    "tr": "Tsongaca",
+    "en": "Tsonga"
+  },
+  {
+    "tr": "Tsvana dili",
+    "en": "Tswana"
+  },
+  {
+    "tr": "Tuluca",
+    "en": "Tulu"
+  },
+  {
+    "tr": "Tumbuka dili",
+    "en": "Tumbuka"
+  },
+  {
+    "tr": "Tuvaca",
+    "en": "Tuvan"
+  },
+  {
+    "tr": "Türkçe",
+    "en": "Turkish"
+  },
+  {
+    "tr": "Türkmence",
+    "en": "Turkmen"
+  },
+  {
+    "tr": "Twi dili",
+    "en": "Twi"
+  },
+  {
+    "tr": "Udmurt dili",
+    "en": "Udmurt"
+  },
+  {
+    "tr": "Ukraynaca",
+    "en": "Ukrainian"
+  },
+  {
+    "tr": "Urduca",
+    "en": "Urdu"
+  },
+  {
+    "tr": "Uygurca",
+    "en": "Uyghur"
+  },
+  {
+    "tr": "Varayca",
+    "en": "Waray"
+  },
+  {
+    "tr": "Venda dili",
+    "en": "Venda"
+  },
+  {
+    "tr": "Venedikçe",
+    "en": "Venetian"
+  },
+  {
+    "tr": "Vietnamca",
+    "en": "Vietnamese"
+  },
+  {
+    "tr": "Wolof dili",
+    "en": "Wolof"
+  },
+  {
+    "tr": "Yakutça",
+    "en": "Yakut"
+  },
+  {
+    "tr": "Yidce",
+    "en": "Yiddish"
+  },
+  {
+    "tr": "Yoruba dili",
+    "en": "Yoruba"
+  },
+  {
+    "tr": "Yucatec Maya dili",
+    "en": "Yucatec Maya"
+  },
+  {
+    "tr": "Yunanca",
+    "en": "Greek"
+  },
+  {
+    "tr": "Zapotek dili",
+    "en": "Zapotec"
+  },
+  {
+    "tr": "Zulu",
+    "en": "Zulu"
+  }
 ]

@@ -6,6 +6,7 @@
   const defaultMappings = {
     i: { language: "İngilizce", delayMs: 500 }
   };
+  const DEFAULT_DELAY_MS = 500;
   const uiTexts = {
     tr: {
       title: "FastLang",
@@ -44,7 +45,7 @@
   const languageInput = document.getElementById("languageInput");
   const delayInput = document.getElementById("delayInput");
   const mappingsWrap = document.getElementById("mappings");
-  const languageList = document.getElementById("languageList");
+  const languageSuggestions = document.getElementById("languageSuggestions");
   const langTrBtn = document.getElementById("langTrBtn");
   const langEnBtn = document.getElementById("langEnBtn");
 
@@ -60,6 +61,12 @@
 
   let mappings = { ...defaultMappings };
   let currentUiLanguage = "tr";
+  let allLanguagePairs = [];
+  let allLanguages = [];
+
+  function refreshDisplayLanguages() {
+    allLanguages = allLanguagePairs.map((p) => (currentUiLanguage === "en" ? p.en : p.tr));
+  }
 
   function normalizeLetter(value) {
     return (value || "").toLocaleLowerCase("tr-TR").trim().slice(0, 1);
@@ -72,6 +79,65 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function normalizeForMatch(text) {
+    const loc = currentUiLanguage === "en" ? "en-US" : "tr-TR";
+    return (text || "")
+      .toLocaleLowerCase(loc)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
+
+  function displayLabelForStored(stored) {
+    for (const p of allLanguagePairs) {
+      if (p.tr === stored || p.en === stored) {
+        return currentUiLanguage === "en" ? p.en : p.tr;
+      }
+    }
+    return stored;
+  }
+
+  function filterLanguages(query) {
+    const q = normalizeForMatch(query);
+    if (!q) {
+      return allLanguages.slice(0, 12);
+    }
+    return allLanguages.filter((name) => normalizeForMatch(name).includes(q)).slice(0, 20);
+  }
+
+  function hideLanguageSuggestions() {
+    languageSuggestions.hidden = true;
+    languageSuggestions.innerHTML = "";
+  }
+
+  function showLanguageSuggestions() {
+    const items = filterLanguages(languageInput.value);
+    if (!items.length) {
+      hideLanguageSuggestions();
+      return;
+    }
+    languageSuggestions.innerHTML = items
+      .map(
+        (name) =>
+          `<button type="button" class="language-suggestion" data-name="${escapeHtml(name)}">${escapeHtml(name)}</button>`
+      )
+      .join("");
+    languageSuggestions.hidden = false;
+  }
+
+  function resolveCanonicalLanguage(raw) {
+    const typed = (raw || "").trim();
+    if (!typed || !allLanguages.length) return null;
+    const exact = allLanguages.find((n) => n === typed);
+    if (exact) return exact;
+    const nt = normalizeForMatch(typed);
+    const byNorm = allLanguages.filter((n) => normalizeForMatch(n) === nt);
+    if (byNorm.length === 1) return byNorm[0];
+    const includes = allLanguages.filter((n) => normalizeForMatch(n).includes(nt));
+    if (includes.length === 1) return includes[0];
+    return null;
   }
 
   function renderMappings() {
@@ -87,7 +153,7 @@
         const item = mappings[key];
         return `
           <div class="item">
-            <div><b>${escapeHtml(key)}</b> -> ${escapeHtml(item.language)} (${item.delayMs}ms)</div>
+            <div><b>${escapeHtml(key)}</b> -> ${escapeHtml(displayLabelForStored(item.language))} (${item.delayMs}ms)</div>
             <button class="delete" data-key="${escapeHtml(key)}">${text.deleteBtn}</button>
           </div>
         `;
@@ -111,6 +177,7 @@
     languageInput.placeholder = text.languagePlaceholder;
     langTrBtn.classList.toggle("active", currentUiLanguage === "tr");
     langEnBtn.classList.toggle("active", currentUiLanguage === "en");
+    refreshDisplayLanguages();
     renderMappings();
   }
 
@@ -121,8 +188,8 @@
   async function loadMappings() {
     const loaded = await chrome.storage.sync.get([STORAGE_KEY]);
     const savedMappings = loaded?.[STORAGE_KEY];
-    if (savedMappings && typeof savedMappings === "object") {
-      mappings = { ...defaultMappings, ...savedMappings };
+    if (savedMappings !== undefined && savedMappings !== null && typeof savedMappings === "object") {
+      mappings = { ...savedMappings };
     } else {
       mappings = { ...defaultMappings };
       await saveMappings();
@@ -139,16 +206,50 @@
   async function loadLanguages() {
     const url = chrome.runtime.getURL("assets/js/languages.json");
     const response = await fetch(url);
-    const languages = await response.json();
-    languageList.innerHTML = languages
-      .map((name) => `<option value="${escapeHtml(name)}"></option>`)
-      .join("");
+    const raw = await response.json();
+    if (
+      Array.isArray(raw) &&
+      raw.length &&
+      typeof raw[0] === "object" &&
+      raw[0] !== null &&
+      Object.prototype.hasOwnProperty.call(raw[0], "tr") &&
+      Object.prototype.hasOwnProperty.call(raw[0], "en")
+    ) {
+      allLanguagePairs = raw.map((p) => ({ tr: String(p.tr), en: String(p.en) }));
+    } else if (Array.isArray(raw) && raw.length && typeof raw[0] === "string") {
+      allLanguagePairs = raw.map((tr) => ({ tr, en: tr }));
+    } else {
+      allLanguagePairs = [];
+    }
+    refreshDisplayLanguages();
   }
+
+  languageInput.addEventListener("input", () => {
+    showLanguageSuggestions();
+  });
+
+  languageInput.addEventListener("focus", () => {
+    showLanguageSuggestions();
+  });
+
+  languageInput.addEventListener("blur", () => {
+    window.setTimeout(() => hideLanguageSuggestions(), 180);
+  });
+
+  languageSuggestions.addEventListener("mousedown", (event) => {
+    const button = event.target.closest(".language-suggestion");
+    if (!(button instanceof HTMLButtonElement)) return;
+    event.preventDefault();
+    const name = button.dataset.name;
+    if (!name) return;
+    languageInput.value = name;
+    hideLanguageSuggestions();
+  });
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const letter = normalizeLetter(letterInput.value);
-    const language = languageInput.value.trim();
+    const language = resolveCanonicalLanguage(languageInput.value);
     const delayMs = Number.parseInt(delayInput.value || "0", 10);
 
     if (!letter || !language) return;
@@ -159,6 +260,9 @@
     await saveMappings();
     renderMappings();
     letterInput.value = "";
+    languageInput.value = "";
+    delayInput.value = String(DEFAULT_DELAY_MS);
+    hideLanguageSuggestions();
   });
 
   mappingsWrap.addEventListener("click", async (event) => {
@@ -167,9 +271,6 @@
     const key = target.dataset.key;
     if (!key || !mappings[key]) return;
     delete mappings[key];
-    if (!mappings.i) {
-      mappings.i = { ...defaultMappings.i };
-    }
     await saveMappings();
     renderMappings();
   });
@@ -184,7 +285,9 @@
     await chrome.storage.sync.set({ [UI_LANG_KEY]: "en" });
   });
 
-  loadLanguages();
-  loadMappings();
-  loadUiLanguage();
+  (async function init() {
+    await loadLanguages();
+    await loadMappings();
+    await loadUiLanguage();
+  })();
 })();
