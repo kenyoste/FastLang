@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "FastLang",
+  "version": "1.1.0",
+  "description": "Google Translate dil aramasinda harf bazli dil secimi yapar.",
+  "icons": {
+    "16": "assets/img/favicon-16x16.png",
+    "32": "assets/img/favicon-32x32.png",
+    "192": "assets/img/android-chrome-192x192.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "FastLang",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/img/favicon-16x16.png",
+      "32": "assets/img/favicon-32x32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://translate.google.com/*"
+      ],
+      "js": [
+        "assets/js/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/js/languages.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

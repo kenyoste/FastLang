@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FastLang</title>
+  <link rel="stylesheet" href="assets/css/popup.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="brand">
+      <img src="assets/img/favicon-32x32.png" alt="Logo" class="brandLogo" onerror="this.style.display='none'" />
+    </div>
+    <div class="topbar">
+      <h1 id="titleText">FastLang</h1>
+      <div class="langSwitch">
+        <span id="langLabel">Dil</span>
+        <div class="langButtons">
+          <button id="langTrBtn" type="button" class="langBtn">TR</button>
+          <button id="langEnBtn" type="button" class="langBtn">EN</button>
+        </div>
+      </div>
+    </div>
+    <p id="hintText" class="hint">Harf yazildiginda secilecek dili belirle.</p>
+
+    <form id="mappingForm" class="form">
+      <label>
+        <span id="letterLabel">Harf</span>
+        <input id="letterInput" maxlength="1" required placeholder="Kisayol olacak harfi girin (orn: i)" />
+      </label>
+
+      <label>
+        <span id="languageLabel">Dil</span>
+        <input id="languageInput" list="languageList" required placeholder="Kisayola baglanacak dili secin (orn: İngilizce)" />
+        <datalist id="languageList"></datalist>
+      </label>
+
+      <label>
+        <span id="delayLabel">Gecikme (ms)</span>
+        <input id="delayInput" type="number" min="0" step="100" value="500" required />
+        <small id="delayHelp" class="fieldHelp">Harf yazildiktan sonra dilin otomatik secilmesi icin beklenecek sure.</small>
+      </label>
+
+      <button id="saveButton" type="submit">Kaydet / Guncelle</button>
+    </form>
+
+    <section>
+      <h2 id="activeMappingsTitle">Aktif Eslesmeler</h2>
+      <div id="mappings"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/popup.js"></script>
+</body>
+</html>
